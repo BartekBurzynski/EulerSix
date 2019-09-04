@@ -1,9 +1,9 @@
 package pl.javastart.eulersix.service;
 
 public class EulerSixService {
-    public static void main(String[] args) {
+    public static void eulerSix() {
         EulerSixService eulerSixService = new EulerSixService();
-        int x =  eulerSixService.calc(100);
+        int x = eulerSixService.calc(100);
         System.out.println(x);
     }
 
@@ -11,7 +11,7 @@ public class EulerSixService {
         int sumOfTheSquare = 0;
         int squareOfTheSum = 0;
         for (int i = 1; i <= x; i++) {
-            sumOfTheSquare += i*i;
+            sumOfTheSquare += i * i;
         }
         for (int i = 1; i <= x; i++) {
             squareOfTheSum += i;

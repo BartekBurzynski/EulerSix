@@ -6,10 +6,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-
 public class EulerSixServiceTest {
     @Test
-    public void shouldReturnFor3() {
+    public void forThree_shouldReturnTwentyTwo() {
         //given
         EulerSixService eulerSixService = new EulerSixService();
         int x = 3;
@@ -18,8 +17,9 @@ public class EulerSixServiceTest {
         //then
         Assert.assertThat(calc, CoreMatchers.is(22));
     }
+
     @Test
-    public void shouldReturnFor1() {
+    public void forOne_shouldReturnZero() {
         //given
         EulerSixService eulerSixService = new EulerSixService();
         int x = 1;
@@ -28,8 +28,9 @@ public class EulerSixServiceTest {
         //then
         Assert.assertThat(calc, CoreMatchers.is(0));
     }
+
     @Test
-    public void shouldReturnFor2() {
+    public void forTwo_shouldReturnFour() {
         //given
         EulerSixService eulerSixService = new EulerSixService();
         int x = 2;
